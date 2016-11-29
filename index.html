@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SimpleCollapse.js </title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/simple_collapse.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>SimpleCollapse.js<a class="download" href="demo.zip" download="demo.zip">Download</a></h2>
+        <h5>Usage</h5>
+        <p>Just add a link to the css file in your &lt;head&gt;:
+        </p><pre><code class="xml">&lt;link rel="stylesheet" href="../css/compiled/simple_collapse.css" /&gt;</code></pre>
+        <p>Then, before your closing &lt;body&gt; tag add:</p><pre><code class="xml">&lt;script src="https://code.jquery.com/jquery-3.1.1.min.js" &gt;&lt;/script&gt;
+&lt;script src="../js/simple_collapse.js"&gt;&lt;script/&gt;</code></pre>
+        <h5>Initialize collapse/s</h5><pre><code class="javascript">$(".collapse").collapse();</code></pre><span class="text">to initialize all collapses</span><span class="text">or </span><pre><code class="javascript">$(".your_class").collapse();</code></pre><span class="text">to especific/s collapse</span>
+        <h3>Collapse Group Example
+        </h3>
+        <div class="collapse_group">
+            <div class="collapse">
+                <div class="collapse__title">Collapse 1
+                    <div class="chevron"></div>
+                </div>
+                <div class="collapse__content open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+            <div class="collapse">
+                <div class="collapse__title">Collapse 2
+                    <div class="chevron"></div>
+                </div>
+                <div class="collapse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+            <div class="collapse">
+                <div class="collapse__title">Collapse 2
+                    <div class="chevron"></div>
+                </div>
+                <div class="collapse__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+        </div>
+        <p>Structure that should be a collapse group</p><pre class="code"><code class="xml">&lt;div class="collapse_group"&gt;
+      &lt;div class="collapse"&gt;
+          &lt;div class="collapse__title"&gt;Collapse 1
+              &lt;div class="chevron"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="collapse__content open"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="collapse"&gt;
+          &lt;div class="collapse__title"&gt;Collapse 2
+              &lt;div class="chevron"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="collapse__content"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="collapse"&gt;
+          &lt;div class="collapse__title"&gt;Collapse 2
+              &lt;div class="chevron"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="collapse__content"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+        <h3>Collapse Only Simple Example</h3>
+        <div class="collapse js-collapse">
+            <div class="collapse__title">Collapse 3
+                <div class="chevron"></div>
+            </div>
+            <div class="collapse__content open">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <p>Structure that should be a only collapse </p><pre class="code"><code class="xml">&lt;div class="collapse"&gt;
+      &lt;div class="collapse__title"&gt;Collapse 3
+          &lt;div class="chevron"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="collapse__content open"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      &lt;/div&gt;
+  &lt;/div&gt;</code></pre></div>
+    <script src="js/app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad()
+    </script>
+</body>
+
+</html>
