@@ -1,5 +1,5 @@
 # SimpleCollapse.js
-
+[demo](https://alejandro-gonzalez.github.io/simplecollapse/)
 ####Usage
 
 Just add a link to the css file in your <head>:
